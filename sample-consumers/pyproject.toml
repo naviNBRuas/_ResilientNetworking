@@ -1,0 +1,23 @@
+[project]
+name = "sample-consumers"
+version = "0.1.0"
+description = "Example composition of multiplexer + retry + fallback"
+authors = [{ name = "Resilient Networking" }]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = []
+readme = "README.md"
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+exclude = ["tests"]

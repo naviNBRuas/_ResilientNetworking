@@ -1,0 +1,36 @@
+[project]
+name = "idl-contracts"
+version = "0.1.0"
+description = "JSON schemas and typed interface definitions for cross-language use"
+authors = [{ name = "Resilient Networking" }]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "jsonschema>=4.0.0",
+]
+readme = "README.md"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+    "types-jsonschema>=4.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+idl_contracts = ["schemas/*.json"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.mypy]
+strict = true

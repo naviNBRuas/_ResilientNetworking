@@ -1,0 +1,38 @@
+0cff-version: 1.2.0
+title: Resilient-Networking
+message: 'If you use this software, please cite it using these metadata.'
+type: software
+authors:
+  - family-names: Resilient-Networking
+    name-particle: Community
+    name: Contributors
+    website: 'https://github.com/navinBRuas/resilient-networking'
+license: MIT
+repository-code: 'https://github.com/navinBRuas/resilient-networking'
+repository-artifact: 'https://pypi.org/project/resilient-networking'
+url: 'https://github.com/navinBRuas/resilient-networking'
+abstract: 'Foundational domain repository of core networking resilience layers, reusable building blocks, and engineering primitives for building resilient networked systems.'
+keywords:
+  - networking
+  - resilience
+  - retry
+  - failover
+  - circuit-breaker
+  - fault-tolerance
+  - distributed-systems
+  - python
+version: 0.1.0
+date-released: '2024-01-01'
+contact:
+  - affiliation: Resilient-Networking Community
+    email: maintainers@resilient-networking.com
+    name: Maintainers
+    website: 'https://github.com/navinBRuas/resilient-networking'
+documentation: 'https://github.com/navinBRuas/resilient-networking#documentation'
+funding:
+  - type: other
+    url: 'https://github.com/navinBRuas/resilient-networking'
+identifiers:
+  - description: The GitHub URL of this repository
+    type: url
+    value: 'https://github.com/navinBRuas/resilient-networking'

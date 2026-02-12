@@ -1,0 +1,83 @@
+# CODEOWNERS
+
+# This file specifies code ownership and responsibility for Resilient-Networking
+# See https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default ownership
+# Default ownership
+* @navinBRuas
+
+# Add per-path overrides below if needed
+# docs/* @navinBRuas
+# submodule-name/* @owner1 @owner2
+
+# Root-level files and configuration
+/.github/ @navinBRuas
+/.gitignore @navinBRuas
+/pyproject.toml @navinBRuas
+/setup.cfg @navinBRuas
+/setup.py @navinBRuas
+/tox.ini @navinBRuas
+/Makefile @navinBRuas
+
+# Documentation
+/README.md @navinBRuas
+/ARCHITECTURE.md @navinBRuas
+/DEPLOYMENT.md @navinBRuas
+/SECURITY.md @navinBRuas
+/GOVERNANCE.md @navinBRuas
+/CONTRIBUTING.md @navinBRuas
+/TROUBLESHOOTING.md @navinBRuas
+/CHANGELOG.md @navinBRuas
+/DOCUMENTATION_INDEX.md @navinBRuas
+/PRODUCTION_STATUS.md @navinBRuas
+/CODE_OF_CONDUCT.md @navinBRuas
+/LICENSE @navinBRuas
+/SUPPORT.md @navinBRuas
+/ACKNOWLEDGMENTS.md @navinBRuas
+
+# CI/CD and automation
+/.github/workflows/ @navinBRuas
+/.github/ISSUE_TEMPLATE/ @navinBRuas
+/.github/PULL_REQUEST_TEMPLATE.md @navinBRuas
+
+# Build and dependencies
+/requirements*.txt @navinBRuas
+/setup.py @navinBRuas
+/pyproject.toml @navinBRuas
+
+# Core resilience modules
+/connection-multiplexer/ @navinBRuas
+/adaptive-retry-strategy/ @navinBRuas
+/offline-sync-engine/ @navinBRuas
+/chaos-network-simulator/ @navinBRuas
+/protocol-fallback-layer/ @navinBRuas
+
+# Extended capability modules
+/transport-adapters-pack/ @navinBRuas
+/congestion-control/ @navinBRuas
+/traffic-shaper-qos/ @navinBRuas
+/session-continuity/ @navinBRuas
+/ordering-dedupe/ @navinBRuas
+/observability-policy-hub/ @navinBRuas
+/discovery-health/ @navinBRuas
+/crypto-envelope/ @navinBRuas
+/replay-capture/ @navinBRuas
+/benchmark-lab/ @navinBRuas
+/config-rollout/ @navinBRuas
+/sample-consumers/ @navinBRuas
+/idl-contracts/ @navinBRuas
+
+# Testing and utilities
+/testing-utils.py @navinBRuas
+/pytest.ini @navinBRuas
+/conftest.py @navinBRuas
+
+# Root utilities
+/Makefile @navinBRuas
+
+# Instructions for reviewers
+# When reviewing pull requests:
+# - @navinBRuas: Review all changes across the repository
+# - Module owners: Review changes within their specific modules
+# - All: Ensure consistency with CONTRIBUTING.md and GOVERNANCE.md
