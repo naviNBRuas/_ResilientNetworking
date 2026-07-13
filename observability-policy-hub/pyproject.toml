@@ -1,6 +1,6 @@
 [project]
 name = "observability-policy-hub"
-version = "0.1.0"
+version = "1.0.0"
 description = "Metrics, events, and policy evaluation hub"
 authors = [{ name = "Resilient Networking" }]
 license = { text = "MIT" }

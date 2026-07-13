@@ -1,6 +1,6 @@
 [project]
 name = "idl-contracts"
-version = "0.1.0"
+version = "1.0.0"
 description = "JSON schemas and typed interface definitions for cross-language use"
 authors = [{ name = "Resilient Networking" }]
 license = { text = "MIT" }

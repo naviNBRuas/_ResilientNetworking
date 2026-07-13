@@ -1,6 +1,6 @@
 [project]
 name = "ordering-dedupe"
-version = "0.1.0"
+version = "1.0.0"
 description = "Ordering, sequencing, and deduplication helpers"
 authors = [{ name = "Resilient Networking" }]
 license = { text = "MIT" }

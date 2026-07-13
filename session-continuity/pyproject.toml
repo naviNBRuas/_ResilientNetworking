@@ -1,6 +1,6 @@
 [project]
 name = "session-continuity"
-version = "0.1.0"
+version = "1.0.0"
 description = "Session tokens, idempotency, and resume support"
 authors = [{ name = "Resilient Networking" }]
 license = { text = "MIT" }

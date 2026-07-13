@@ -1,6 +1,6 @@
 [project]
 name = "transport-adapters-pack"
-version = "0.1.0"
+version = "1.0.0"
 description = "Pluggable transport adapters (HTTP, WebSocket, MQTT-style stub)"
 authors = [{ name = "Resilient Networking" }]
 license = { text = "MIT" }

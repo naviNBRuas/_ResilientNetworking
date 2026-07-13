@@ -1,6 +1,6 @@
 [project]
 name = "adaptive-retry-strategy"
-version = "0.1.0"
+version = "1.0.0"
 description = "Adaptive retry and backoff logic with circuit awareness"
 authors = [{ name = "Resilient Networking" }]
 license = { text = "MIT" }

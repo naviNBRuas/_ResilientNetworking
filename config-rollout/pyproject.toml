@@ -1,6 +1,6 @@
 [project]
 name = "config-rollout"
-version = "0.1.0"
+version = "1.0.0"
 description = "Typed config and gradual rollout helpers"
 authors = [{ name = "Resilient Networking" }]
 license = { text = "MIT" }

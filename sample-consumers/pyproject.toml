@@ -1,6 +1,6 @@
 [project]
 name = "sample-consumers"
-version = "0.1.0"
+version = "1.0.0"
 description = "Example composition of multiplexer + retry + fallback"
 authors = [{ name = "Resilient Networking" }]
 license = { text = "MIT" }

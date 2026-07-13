@@ -1,6 +1,6 @@
 [project]
 name = "connection-multiplexer"
-version = "0.1.0"
+version = "1.0.0"
 description = "Resilient connection management and multiplexing across transports"
 authors = [{ name = "Resilient Networking" }]
 license = { text = "MIT" }

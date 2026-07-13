@@ -1,6 +1,6 @@
 [project]
 name = "congestion-control"
-version = "0.1.0"
+version = "1.0.0"
 description = "Adaptive rate limiting and congestion control utilities"
 authors = [{ name = "Resilient Networking" }]
 license = { text = "MIT" }

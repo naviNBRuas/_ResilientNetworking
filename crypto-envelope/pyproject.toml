@@ -1,6 +1,6 @@
 [project]
 name = "crypto-envelope"
-version = "0.1.0"
+version = "1.0.0"
 description = "Signing and encryption envelope with key rotation hooks"
 authors = [{ name = "Resilient Networking" }]
 license = { text = "MIT" }

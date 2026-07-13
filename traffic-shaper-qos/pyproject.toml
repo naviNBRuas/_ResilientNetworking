@@ -1,6 +1,6 @@
 [project]
 name = "traffic-shaper-qos"
-version = "0.1.0"
+version = "1.0.0"
 description = "Priority/fairness scheduling utilities"
 authors = [{ name = "Resilient Networking" }]
 license = { text = "MIT" }

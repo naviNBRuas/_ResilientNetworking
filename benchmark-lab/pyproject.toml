@@ -1,6 +1,6 @@
 [project]
 name = "benchmark-lab"
-version = "0.1.0"
+version = "1.0.0"
 description = "Microbenchmark harness for resilience components"
 authors = [{ name = "Resilient Networking" }]
 license = { text = "MIT" }

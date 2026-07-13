@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test-python:
+    name: test (${{ matrix.package }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        package:
+          - adaptive-retry-strategy
+          - benchmark-lab
+          - chaos-network-simulator
+          - config-rollout
+          - congestion-control
+          - connection-multiplexer
+          - crypto-envelope
+          - discovery-health
+          - idl-contracts
+          - observability-policy-hub
+          - offline-sync-engine
+          - ordering-dedupe
+          - protocol-fallback-layer
+          - replay-capture
+          - sample-consumers
+          - session-continuity
+          - traffic-shaper-qos
+          - transport-adapters-pack
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install package
+        working-directory: ${{ matrix.package }}
+        run: pip install -e ".[dev]" pytest
+      - name: Run tests
+        working-directory: ${{ matrix.package }}
+        run: python -m pytest tests -v
+      - name: Build distribution
+        working-directory: ${{ matrix.package }}
+        run: |
+          pip install build
+          python -m build
