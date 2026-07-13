@@ -108,15 +108,15 @@ def test_concurrency_sequencer():
 
 def test_concurrency_deduplicator():
     d = Deduplicator(ttl_seconds=10, max_count=1000)
-    
-    def worker():
+
+    def worker(worker_id):
         for i in range(100):
-            d.seen(f"key-{threading.get_ident()}-{i}")
-            
-    threads = [threading.Thread(target=worker) for _ in range(10)]
+            d.seen(f"key-{worker_id}-{i}")
+
+    threads = [threading.Thread(target=worker, args=(w,)) for w in range(10)]
     for t in threads:
         t.start()
     for t in threads:
         t.join()
-        
+
     assert len(d._seen) == 1000
